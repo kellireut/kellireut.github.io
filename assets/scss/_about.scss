@@ -1,0 +1,36 @@
+div.hero {
+    width: 100vw;
+    img.hero {
+        width: 100%;
+    }
+}
+
+.about-us {
+    width: 80%;
+    max-width: 520px;
+    margin: 0 15vw 40px 15vw;
+    h2 {
+        padding: 35px 0 20px 0;
+    }
+    p {
+        padding: 0 0 15px 0;
+        line-height: 1.5;
+    }
+    a {
+        font-family: $body;
+        font-style: italic;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    .neh-logo {
+        width: 90vw;
+        max-width: 250px;
+        margin: 10px 0 20px 0;
+    }
+    #glossary-link {
+        size: 12px;
+        text-decoration: none;
+        margin-top: 30px;
+        display: block;
+    }
+}

@@ -1,0 +1,158 @@
+.filter {
+    margin-top: 82px;
+    menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 50px;
+        align-items: center;
+        border-bottom: 2px solid rgba(175, 175, 175, .8);
+    }
+    h3 {
+        font-family: $body;
+        color: #666666;
+        font-size: 12px;
+        font-style: italic;
+        width: 223px;
+        cursor: pointer;
+    }
+    h2 {
+        cursor: default;
+        font-size: 16px;
+    }
+    .search-field {
+        cursor: default;
+        #search-bar {
+            cursor: text;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        form {
+            position: relative;
+            display: inline-block;
+            margin-right: 30px;
+            input {
+                margin-right: 20px;
+            }
+            input:focus + #search-icon {
+                opacity: 1;
+                transition: all 100ms;
+            }
+            button#search-icon {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                height: 70%;
+                width: auto;
+                opacity: 0;
+                transform: translateY(-50%);
+                transition: all 100ms;
+                img {
+                    width: auto;
+                    background: transparent;
+                    height: 100%;
+                    vertical-align: middle;
+                    padding: 0;
+                    // margin-left: 5px;
+                    cursor: pointer;    
+                }
+            }
+        }
+    }
+    button {
+        width: 20px;
+        background: transparent;
+        height: 30px;
+        vertical-align: middle;
+        padding: 0;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+
+
+.filter-open {
+    position: relative;
+    border-bottom: 2px solid rgba(175, 175, 175, .8);
+    padding: 30px 5% 20px 5%;
+    h3 {
+        font-family: $body;
+        color: #666666;
+        font-size: 12px;
+        font-style: italic;
+        cursor: pointer;
+    }
+    h3.clear {
+        position: absolute;
+        top: 36px;
+        right: 100px;
+        color: #b3b3b3;
+        cursor: pointer;
+        transition: all 200ms;
+        &:focus, &:active {
+            outline: none;
+        }
+        &:hover {
+            color: black;
+            transition: all 200ms;
+        }
+    }
+    ul.filter-section {
+        padding: 30px 0 0 0;
+        cursor: default;
+    }
+    li.filter-groups {
+        display: inline-block;
+        font-family: $heading;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #666666;
+        width: 25%;
+        letter-spacing: 1px;
+    }
+    ul.filter-items {
+        padding: 19px 0 0 0;
+    }
+    li.options {
+        font-family: $body;
+        color: #b3b3b3;
+        text-transform: lowercase;
+        font-size: 12px;
+        margin: 0 0 15px 15px;
+        cursor: pointer;
+        transition: all 200ms;
+        &.active {
+            color: black;
+        }
+        &.active::before { //circle for selected options
+            content: "";
+            height: 5px;
+            width: 5px;
+            background: black;
+            margin: 0 6px 0 -11px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        &:hover {
+            color: black;
+            transition: all 200ms;
+        }
+    }
+} 
+
+.close-button { 
+        border: none;
+        background: none;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        font-size: 18px;
+        color: #b3b3b3;
+        cursor: pointer;
+        transition: all 200ms;
+        &:hover {
+            color: black;
+            transition: all 200ms;
+        }
+    }

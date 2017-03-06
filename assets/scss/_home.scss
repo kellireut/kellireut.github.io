@@ -1,0 +1,98 @@
+#animation {
+    position: relative;
+    img {
+        width: 100vw;
+    }    
+    .slider {
+        position: absolute;
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+        .slider-dot {
+            margin: 3px;
+            display: inline-block;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            &:hover {
+                background: rgba(255, 255, 255, .8);
+            }
+        }
+        .active {
+            background: rgba(255, 255, 255, .8);
+        }
+    }
+}
+
+h1#tagline {
+    font-family: $heading;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    &:before {
+        content: "";
+        position: absolute;
+        border-top: 2px solid rgba(175, 175, 175, .8);
+        margin: 0 auto;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    span {
+        background: white;
+        padding: 0 10px 0 10px;
+        margin: 0;
+    }
+}
+
+.tiles {
+    display: inline-block;
+    position: relative;
+    width: 45vw;
+    &:nth-child(odd) {
+        margin: 0 1.7vw 20px 3vw;
+    }
+    &:nth-child(even) {
+        margin: 0 3vw 40px 1.7vw;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, .4);
+        height: 100%;
+        transition: all 500ms;
+        &:hover {
+            background: rgba(0, 0, 0, .1);
+            transition: all 500ms;
+        }
+    }
+    img {
+        width: 100%;
+        position: relative;
+        z-index: -10;
+    }
+    h2 {
+        font-family: $heading;
+        text-transform: uppercase;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 30px;
+        left: 7%;
+        max-width: 70%;
+    }
+    p {
+        font-family: $body;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 50px;
+        left: 7%;
+        line-height: 1.4;
+        max-width: 70%;
+    }
+}

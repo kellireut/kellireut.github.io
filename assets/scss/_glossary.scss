@@ -1,0 +1,21 @@
+.glossary {
+    width: 80%;
+    max-width: 520px;
+    margin: 0 15vw 40px 15vw;
+    h2 {
+        padding: 35px 0 20px 0;
+    }
+    p {
+        padding: 0 0 15px 0;
+        line-height: 1.5;
+    }
+    a {
+        font-family: $body;
+        font-style: italic;
+        color: black;
+        font-weight: 700;
+    }
+    span {
+        font-family: $heading;
+    }
+}
