@@ -1,8 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Muli:300,400,400i,700|Ubuntu:300,500);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Nunito:200i,400,800);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Bahiana|Crushed|Overlock:900);
 
-$body: 'Muli', sans-serif;
-$body-bold: 'Muli', sans-serif;
-$heading: 'Montserrat', sans-serif;
-$logo: "Ubuntu", sans-serif;
+$body: 'Nunito', sans-serif;
+$heading: 'Josefin Sans', sans-serif;
+
+
+h1, h2, h3, h4 {
+	font-family: $heading;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1.35em;
+}
+
+h4 {
+	font-size: 17px;
+	color: $primary;
+}
+
+p {
+	font-family: $body;
+	font-weight: 300px;
+	font-size: 16px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 
 
