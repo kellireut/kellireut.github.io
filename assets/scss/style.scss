@@ -1,1 +1,28 @@
 @import 'reset';
+
+body {
+    background-color: #6fb4e2;
+    height: 100vh; 
+    display: flex; 
+    flex: 1 1; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
+    padding: 20px; 
+}
+
+p {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 18px; 
+    padding: 15px;
+}
+
+a {
+    color: #1d1d1d; 
+}
