@@ -1,7 +1,7 @@
 @import 'reset';
 
-body {
-    background-color: #6fb4e2;
+div {
+    background: linear-gradient(217deg, #aceeea, #5fdad3);
     height: 100vh; 
     display: flex; 
     flex: 1 1; 
@@ -15,14 +15,16 @@ h1 {
     font-size: 36px; 
     font-weight: bold; 
     padding: 20px; 
+    color: #283030;
 }
 
 p {
     font-family: 'Montserrat', sans-serif; 
     font-size: 18px; 
     padding: 15px;
+    color: #283030;
 }
 
 a {
-    color: #1d1d1d; 
+    color: #283030;
 }
