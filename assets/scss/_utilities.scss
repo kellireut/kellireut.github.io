@@ -1,0 +1,76 @@
+// COLORS
+
+$black: #4a4a4a;
+$teal: #41a193;
+$gray: rgb(240, 240, 240);
+
+* {
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    color: $black;
+    font-size: 18px;
+}
+
+// TEXT STYLES
+
+.heading_primary {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.heading_secondary {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.heading_tertiary {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 5px;
+    color: lighten($black, 30);
+}
+
+.body-copy {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+ul {
+    @extend .body-copy;
+}
+
+// BUTTONS & LINKS
+
+.primary-button {
+    border: 2px solid $black;
+    border-radius: 6px;
+    padding: 0.4em 1em;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    background: #f0f0f0;
+    &:hover {
+        color: $teal;
+        border-color: $teal;
+        background: lighten($teal, 50);
+    }
+}
+
+.inline-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
