@@ -53,13 +53,13 @@ ul {
 .primary-button {
     border: 2px solid $black;
     border-radius: 6px;
-    padding: 0.4em 1em;
+    padding: 0.2em 1.1em 0.1em;
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     background: #f0f0f0;
     &:hover {
         color: $teal;

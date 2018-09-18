@@ -164,14 +164,14 @@ a {
 .primary-button {
   border: 2px solid #4a4a4a;
   border-radius: 6px;
-  padding: 0.4em 1em;
+  padding: 0.2em 1.1em 0.1em;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background: #f0f0f0;
 }
 
@@ -200,22 +200,24 @@ header {
   padding: 1vw;
   border-bottom: 1px solid #4a4a4a;
   margin-bottom: 80px;
+  font-size: 20px;
 }
 
 header h1 {
   font-family: "Mukta", sans-serif;
-  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
+  cursor: default;
 }
 
-header h1 span {
+header h1 .tagline {
   font-weight: 300;
 }
 
-header h1 span.bar {
+header h1 .bar {
   font-size: 1.15em;
+  font-weight: 300;
 }
 
 header li {
@@ -261,7 +263,8 @@ footer p {
   color: #a4a4a4;
 }
 
-main {
+.home,
+.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,13 +274,15 @@ main {
   margin: 0 auto;
 }
 
-main > *:first-child {
+.home > *:first-child,
+.project > *:first-child {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   padding: 0 3vw;
 }
 
-main > *:last-child {
+.home > *:last-child,
+.project > *:last-child {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   padding: 0 3vw;
@@ -328,29 +333,6 @@ main > *:last-child {
   text-align: center;
 }
 
-.see-more a {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  border: 1px solid #4a4a4a;
-  background: white;
-  border-radius: 6px;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0.3em 1.3em;
-  width: auto;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.see-more a:hover {
-  background: #41a193;
-  border-color: #41a193;
-  color: white;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .project .heading_secondary,
 .project .heading_tertiary {
   margin-top: 40px;
@@ -381,5 +363,22 @@ main > *:last-child {
   width: 100%;
   -webkit-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 0.44);
           box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 0.44);
+}
+
+.about {
+  max-width: 600px;
+  width: 95vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about .body-copy, .about ul {
+  text-align: left;
+  margin: 40px 0;
+}
+
+.headshot {
+  width: 300px;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
