@@ -1,30 +1,8 @@
-@import 'reset';
+@import "reset";
 
-div {
-    background: linear-gradient(217deg, #aceeea, #5fdad3);
-    height: 100vh; 
-    display: flex; 
-    flex: 1 1; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-}
+@import "utilities";
 
-h1 {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 36px; 
-    font-weight: bold; 
-    padding: 20px; 
-    color: #283030;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 18px; 
-    padding: 15px;
-    color: #283030;
-}
-
-a {
-    color: #283030;
-}
+@import "header";
+@import "home";
+@import "project";
+@import "about";
