@@ -155,7 +155,7 @@ a {
   color: #979797;
 }
 
-.body-copy, ul {
+.body-copy, ul, .more-coming {
   font-size: 16px;
   margin-bottom: 20px;
   font-weight: 200;
@@ -333,12 +333,19 @@ main.project > *:last-child {
   text-align: center;
 }
 
+.more-coming {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 10px;
+}
+
 .project .heading_secondary,
 .project .heading_tertiary {
   margin-top: 40px;
 }
 
-.project .body-copy, .project ul {
+.project .body-copy, .project ul, .project .more-coming {
   margin-bottom: 15px;
 }
 
@@ -372,7 +379,7 @@ main.project > *:last-child {
   margin: 0 auto;
 }
 
-.about .body-copy, .about ul {
+.about .body-copy, .about ul, .about .more-coming {
   text-align: left;
   margin: 40px 0;
 }
