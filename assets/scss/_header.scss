@@ -5,18 +5,19 @@ header {
     padding: 1vw;
     border-bottom: 1px solid $black;
     margin-bottom: 80px;
+    font-size: 20px;
     h1 {
         font-family: "Mukta", sans-serif;
-        font-size: 20px;
         font-weight: 600;
         text-transform: uppercase;
         line-height: 1;
-        span {
+        cursor: default;
+        .tagline {
             font-weight: 300;
-            // font-size: 0.9em;
         }
-        span.bar {
+        .bar {
             font-size: 1.15em;
+            font-weight: 300;
         }
     }
     li {
