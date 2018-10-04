@@ -50,8 +50,21 @@ footer {
     background: $gray;
     width: 100%;
     padding: 1em 40px;
-    margin-top: 60px;
     p {
         color: darken($gray, 30);
+    }
+}
+
+main {
+    margin-bottom: $main-bottom-margin;
+}
+
+body.flex-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    footer {
+        margin-top: auto;
     }
 }
