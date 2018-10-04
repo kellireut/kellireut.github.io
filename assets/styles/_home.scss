@@ -53,8 +53,14 @@ main.project {
         transition: all 0.3s ease;
         &:hover {
             transform: scale(1.05);
-            .project-title {
+            .project-title,
+            .project-link {
                 color: $teal;
+            }
+        }
+        @media (min-width: 1000px) {
+            &:hover {
+                transform: scale(1.03);
             }
         }
     }
