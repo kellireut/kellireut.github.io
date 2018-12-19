@@ -124,7 +124,7 @@ a {
 }
 
 * {
-  font-family: "Mukta", sans-serif;
+  font-family: 'Mukta', sans-serif;
   font-weight: 300;
   color: #4a4a4a;
   font-size: 18px;
@@ -136,6 +136,11 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
   line-height: 1;
+}
+
+.heading_primary.color-changing {
+  -webkit-animation: ColorChangingPurple 40s ease infinite;
+          animation: ColorChangingPurple 40s ease infinite;
 }
 
 .heading_secondary {
@@ -158,7 +163,12 @@ a {
 .body-copy, ul, .more-coming {
   font-size: 16px;
   margin-bottom: 20px;
-  font-weight: 200;
+  font-weight: 300;
+}
+
+span.bold,
+a.bold {
+  font-weight: 700;
 }
 
 .primary-button {
@@ -194,6 +204,164 @@ a {
           box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 0.44);
 }
 
+/* @keyframes duration | timing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+@-webkit-keyframes BackgroundGradientAnimation {
+  0% {
+    background-position: 0% 46%;
+  }
+  50% {
+    background-position: 100% 55%;
+  }
+  100% {
+    background-position: 0% 46%;
+  }
+}
+@keyframes BackgroundGradientAnimation {
+  0% {
+    background-position: 0% 46%;
+  }
+  50% {
+    background-position: 100% 55%;
+  }
+  100% {
+    background-position: 0% 46%;
+  }
+}
+
+@-webkit-keyframes ColorChangingPurple {
+  0% {
+    color: #4b0e8d;
+  }
+  33% {
+    color: #13133d;
+  }
+  66% {
+    color: #791ddc;
+  }
+  100% {
+    color: #4b0e8d;
+  }
+}
+
+@keyframes ColorChangingPurple {
+  0% {
+    color: #4b0e8d;
+  }
+  33% {
+    color: #13133d;
+  }
+  66% {
+    color: #791ddc;
+  }
+  100% {
+    color: #4b0e8d;
+  }
+}
+
+@-webkit-keyframes ColorChangingTeal {
+  0% {
+    color: #a1d1c9;
+  }
+  25% {
+    color: #77d1c3;
+  }
+  50% {
+    color: #41a193;
+  }
+  75% {
+    color: #076053;
+  }
+  100% {
+    color: #a1d1c9;
+  }
+}
+
+@keyframes ColorChangingTeal {
+  0% {
+    color: #a1d1c9;
+  }
+  25% {
+    color: #77d1c3;
+  }
+  50% {
+    color: #41a193;
+  }
+  75% {
+    color: #076053;
+  }
+  100% {
+    color: #a1d1c9;
+  }
+}
+
+@-webkit-keyframes rotateTextColor {
+  0% {
+    color: #5e34ca;
+  }
+  33% {
+    color: #4cd362;
+  }
+  66% {
+    color: #c62d93;
+  }
+  100% {
+    color: #5e34ca;
+  }
+}
+
+@keyframes rotateTextColor {
+  0% {
+    color: #5e34ca;
+  }
+  33% {
+    color: #4cd362;
+  }
+  66% {
+    color: #c62d93;
+  }
+  100% {
+    color: #5e34ca;
+  }
+}
+
+@-webkit-keyframes rotateBackgroundColor {
+  0% {
+    background-color: #5e34ca;
+  }
+  33% {
+    background-color: #4cd362;
+  }
+  66% {
+    background-color: #c62d93;
+  }
+  100% {
+    background-color: #5e34ca;
+  }
+}
+
+@keyframes rotateBackgroundColor {
+  0% {
+    background-color: #5e34ca;
+  }
+  33% {
+    background-color: #4cd362;
+  }
+  66% {
+    background-color: #c62d93;
+  }
+  100% {
+    background-color: #5e34ca;
+  }
+}
+
+.color-changing-border {
+  background: linear-gradient(309deg, #4b0e8d, #13133d, #791ddc, #06dfd9);
+  background-size: 800% 800%;
+  -webkit-animation: BackgroundGradientAnimation 47s ease infinite;
+  animation: BackgroundGradientAnimation 40s ease infinite;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +377,7 @@ header {
 }
 
 header h1 {
-  font-family: "Mukta", sans-serif;
+  font-family: 'Mukta', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
@@ -255,16 +423,21 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 400;
   background: #f0f0f0;
   width: 100%;
-  padding: 1em 40px;
+  padding: 1.5em 40px;
 }
 
 footer p {
   color: #a4a4a4;
+}
+
+.body-white {
+  background: white;
+  margin: 0.5em;
 }
 
 main {
@@ -310,9 +483,9 @@ main.project .column1 {
 
 .home .column2,
 main.project .column2 {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1;
-          flex: 3 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1;
+          flex: 2 1;
   padding: 0 3vw;
 }
 
@@ -388,6 +561,15 @@ main.project .column2 {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
   }
+}
+
+.project-list .project-link {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-animation: ColorChangingTeal 20s ease infinite;
+          animation: ColorChangingTeal 20s ease infinite;
 }
 
 .see-more {

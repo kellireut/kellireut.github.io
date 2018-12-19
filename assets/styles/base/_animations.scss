@@ -1,0 +1,85 @@
+/* @keyframes duration | timing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+
+@keyframes BackgroundGradientAnimation {
+    0% {
+        background-position: 0% 46%;
+    }
+    50% {
+        background-position: 100% 55%;
+    }
+    100% {
+        background-position: 0% 46%;
+    }
+}
+
+@keyframes ColorChangingPurple {
+    0% {
+        color: #4b0e8d;
+    }
+    33% {
+        color: #13133d;
+    }
+    66% {
+        color: #791ddc;
+    }
+    100% {
+        color: #4b0e8d;
+    }
+}
+
+@keyframes ColorChangingTeal {
+    0% {
+        color: #a1d1c9;
+    }
+    25% {
+        color: #77d1c3;
+    }
+    50% {
+        color: #41a193;
+    }
+    75% {
+        color: #076053;
+    }
+    100% {
+        color: #a1d1c9;
+    }
+}
+
+@keyframes rotateTextColor {
+    0% {
+        color: #5e34ca;
+    }
+    33% {
+        color: #4cd362;
+    }
+    66% {
+        color: #c62d93;
+    }
+    100% {
+        color: #5e34ca;
+    }
+}
+
+@keyframes rotateBackgroundColor {
+    0% {
+        background-color: #5e34ca;
+    }
+    33% {
+        background-color: #4cd362;
+    }
+    66% {
+        background-color: #c62d93;
+    }
+    100% {
+        background-color: #5e34ca;
+    }
+}
+
+.color-changing-border {
+    background: linear-gradient(309deg, #4b0e8d, #13133d, #791ddc, #06dfd9);
+    background-size: 800% 800%;
+    -webkit-animation: BackgroundGradientAnimation 47s ease infinite;
+    -moz-animation: BackgroundGradientAnimation 47s ease infinite;
+    animation: BackgroundGradientAnimation 40s ease infinite;
+}
