@@ -7,7 +7,7 @@ $gray: rgb(240, 240, 240);
 $main-bottom-margin: 60px;
 
 * {
-    font-family: "Mukta", sans-serif;
+    font-family: 'Mukta', sans-serif;
     font-weight: 300;
     color: $black;
     font-size: 18px;
@@ -21,6 +21,9 @@ $main-bottom-margin: 60px;
     text-transform: uppercase;
     margin-bottom: 20px;
     line-height: 1;
+    &.color-changing {
+        animation: ColorChangingPurple 40s ease infinite;
+    }
 }
 
 .heading_secondary {
@@ -43,7 +46,12 @@ $main-bottom-margin: 60px;
 .body-copy {
     font-size: 16px;
     margin-bottom: 20px;
-    font-weight: 200;
+    font-weight: 300;
+}
+
+span.bold,
+a.bold {
+    font-weight: 700;
 }
 
 ul {
