@@ -1,8 +1,9 @@
-@import "reset";
+@import 'base/reset';
 
-@import "utilities";
+@import 'base/utilities';
+@import 'base/animations';
 
-@import "header";
-@import "home";
-@import "project";
-@import "about";
+@import 'header';
+@import 'home';
+@import 'project';
+@import 'about';

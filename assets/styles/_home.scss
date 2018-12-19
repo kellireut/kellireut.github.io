@@ -28,7 +28,6 @@ main.project {
         padding: 5px 2px;
     }
     a {
-        // font-variant: small-caps;
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 600;
@@ -69,6 +68,7 @@ main.project {
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 600;
+        animation: ColorChangingTeal 20s ease infinite;
     }
 }
 
