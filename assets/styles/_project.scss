@@ -6,6 +6,15 @@
     .body-copy {
         margin-bottom: 15px;
     }
+    .no-margin {
+        margin: 0;
+    }
+    .statistics {
+        margin: -10px 0 15px 15px;
+        li {
+            list-style: circle inside;
+        }
+    }
     .links-group {
         // display: flex;
         // justify-content: space-between;
