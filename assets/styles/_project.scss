@@ -39,12 +39,8 @@ main.project {
             list-style: circle inside;
         }
     }
-    .links-group {
-        margin-top: 30px;
-        > * {
-            width: 100%;
-            margin: 0 10px 10px;
-        }
+    .active-site-link {
+        margin: 20px 0;
     }
     .store-buttons {
         display: flex;

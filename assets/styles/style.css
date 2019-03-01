@@ -177,21 +177,15 @@ ul {
           animation: ChangingPurpleTextColor 40s ease infinite;
 }
 
-.primary-button {
-  font-size: 24px;
-  font-weight: 400;
+.primary-button, .inline-link {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
   text-decoration: none;
-  -webkit-animation: ChangingPurpleTextColor 40s ease infinite;
-          animation: ChangingPurpleTextColor 40s ease infinite;
   position: relative;
   display: inline-block;
 }
 
-.primary-button::after {
+.primary-button::after, .inline-link::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -205,16 +199,25 @@ ul {
   transition: all ease 0.3s;
 }
 
-.primary-button:hover::after {
+.primary-button:hover::after, .inline-link:hover::after {
   height: 100%;
 }
 
-.inline-link {
-  text-decoration: none;
+.primary-button {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  -webkit-animation: ChangingPurpleTextColor 40s ease infinite;
+          animation: ChangingPurpleTextColor 40s ease infinite;
 }
 
-.inline-link:hover {
-  text-decoration: underline;
+.inline-link::after {
+  bottom: 6px;
+}
+
+.inline-link:hover::after {
+  height: 1.1em;
 }
 
 .image-shadow, .project img, .project .flex.mobile-web-mockups img, .headshot {
@@ -678,13 +681,8 @@ main.project .column2 {
   list-style: circle inside;
 }
 
-.project .links-group {
-  margin-top: 30px;
-}
-
-.project .links-group > * {
-  width: 100%;
-  margin: 0 10px 10px;
+.project .active-site-link {
+  margin: 20px 0;
 }
 
 .project .store-buttons {
