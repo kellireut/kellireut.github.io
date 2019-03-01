@@ -1,3 +1,27 @@
+main.project {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto 60px;
+    .column1 {
+        flex: 1 1;
+        padding: 0 3vw;
+    }
+    .column2 {
+        flex: 2 1;
+        padding: 0 3vw;
+    }
+    @media (max-width: 700px) {
+        display: block;
+        .column1 {
+            width: 100%;
+        }
+        .column2 {
+            width: 100%;
+        }
+    }
+}
+
 .project {
     .heading_secondary,
     .heading_tertiary {
@@ -16,9 +40,6 @@
         }
     }
     .links-group {
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
         margin-top: 30px;
         > * {
             width: 100%;

@@ -1,24 +1,12 @@
 /* @keyframes duration | timing-function | delay |
 iteration-count | direction | fill-mode | play-state | name */
 
-@keyframes BackgroundGradientAnimation {
-    0% {
-        background-position: 0% 46%;
-    }
-    50% {
-        background-position: 100% 55%;
-    }
-    100% {
-        background-position: 0% 46%;
-    }
-}
-
-@keyframes ColorChangingPurple {
+@keyframes ChangingPurpleTextColor {
     0% {
         color: #4b0e8d;
     }
     33% {
-        color: #13133d;
+        color: #1c1c55;
     }
     66% {
         color: #791ddc;
@@ -28,58 +16,69 @@ iteration-count | direction | fill-mode | play-state | name */
     }
 }
 
-@keyframes ColorChangingTeal {
+@keyframes ChangingPurpleBorder {
     0% {
-        color: #a1d1c9;
+        border: 20px solid #4b0e8d;
     }
-    25% {
+    33% {
+        border: 20px solid #1c1c55;
+    }
+    66% {
+        border: 20px solid #791ddc;
+    }
+    100% {
+        border: 20px solid #4b0e8d;
+    }
+}
+
+@keyframes ChangingPurpleBackground {
+    0% {
+        background-color: #4b0e8d;
+    }
+    33% {
+        background-color: #1c1c55;
+    }
+    66% {
+        background-color: #791ddc;
+    }
+    100% {
+        background-color: #4b0e8d;
+    }
+}
+
+
+@keyframes TealTextColor {
+    0% {
         color: #77d1c3;
     }
-    50% {
-        color: #41a193;
+    33% {
+        color: #5ed6c4;
     }
-    75% {
-        color: #076053;
+    66% {
+        color: #92d4c9;
     }
     100% {
-        color: #a1d1c9;
+        color: #77d1c3;
     }
 }
 
-@keyframes rotateTextColor {
+@keyframes ChangingTealBackground {
     0% {
-        color: #5e34ca;
+        background-color: #77d1c3;
     }
     33% {
-        color: #4cd362;
+        background-color: #5ed6c4;
     }
     66% {
-        color: #c62d93;
+        background-color: #92d4c9;
     }
     100% {
-        color: #5e34ca;
+        background-color: #77d1c3;
     }
 }
 
-@keyframes rotateBackgroundColor {
-    0% {
-        background-color: #5e34ca;
-    }
-    33% {
-        background-color: #4cd362;
-    }
-    66% {
-        background-color: #c62d93;
-    }
-    100% {
-        background-color: #5e34ca;
-    }
-}
+
 
 .color-changing-border {
-    background: linear-gradient(309deg, #4b0e8d, #13133d, #791ddc, #06dfd9);
-    background-size: 800% 800%;
-    -webkit-animation: BackgroundGradientAnimation 47s ease infinite;
-    -moz-animation: BackgroundGradientAnimation 47s ease infinite;
-    animation: BackgroundGradientAnimation 40s ease infinite;
+    animation: ChangingPurpleBorder 40s ease infinite;
 }
