@@ -11,7 +11,7 @@ main.project {
         flex: 2 1;
         padding: 0 3vw;
     }
-    @media (max-width: 700px) {
+    @media #{$medium-screen} {
         display: block;
         .column1 {
             width: 100%;
@@ -59,20 +59,20 @@ main.project {
         }
     }
     .to-home-desktop {
-        @media (min-width: 701px) {
+        @media (min-width: 801px) {
             margin-top: 100px;
             position: sticky;
             top: 20px;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
             display: none;
         }
     }
     .to-home-mobile {
-        @media (min-width: 701px) {
+        @media (min-width: 801px) {
             display: none;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
             margin-top: 50px;
         }
     }
@@ -103,7 +103,7 @@ main.project {
         img {
             box-shadow: unset;
         }
-        @media (max-width: 450px) {
+        @media #{$small-screen} {
             flex-wrap: wrap;
             div:first-child {
                 padding-right: 0;
