@@ -1,7 +1,7 @@
 main.project {
     display: flex;
     justify-content: space-around;
-    max-width: 1300px;
+    max-width: 1600px;
     margin: 0 auto 60px;
     .column1 {
         flex: 1 1;
@@ -57,6 +57,27 @@ main.project {
             padding: 0;
             background: transparent;
         }
+    }
+    .to-home-desktop {
+        @media (min-width: 701px) {
+            margin-top: 100px;
+            position: sticky;
+            top: 20px;
+        }
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+    .to-home-mobile {
+        @media (min-width: 701px) {
+            display: none;
+        }
+        @media (max-width: 700px) {
+            margin-top: 50px;
+        }
+    }
+    .center-button-container {
+        text-align: center;
     }
     img {
         width: 100%;
