@@ -481,6 +481,16 @@ footer p {
   color: #a4a4a4;
 }
 
+@media (max-width: 450px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer p {
+    margin: 5px auto;
+  }
+}
+
 .body-white {
   background: white;
   margin: 8px;
@@ -531,7 +541,7 @@ body.flex-body footer {
   padding: 0 3vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .home {
     display: block;
   }
@@ -549,6 +559,18 @@ body.flex-body footer {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   text-transform: lowercase;
+}
+
+@media (max-width: 1100px) {
+  .hello {
+    font-size: 7em;
+  }
+}
+
+@media (max-width: 950px) {
+  .hello {
+    font-size: 6em;
+  }
 }
 
 .connect-links li {
@@ -642,7 +664,7 @@ main.project .column2 {
   padding: 0 3vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   main.project {
     display: block;
   }
@@ -701,7 +723,7 @@ main.project .column2 {
   background: transparent;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 851px) {
   .project .to-home-desktop {
     margin-top: 100px;
     position: -webkit-sticky;
@@ -710,19 +732,19 @@ main.project .column2 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .project .to-home-desktop {
     display: none;
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 851px) {
   .project .to-home-mobile {
     display: none;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .project .to-home-mobile {
     margin-top: 50px;
   }
@@ -734,12 +756,6 @@ main.project .column2 {
 
 .project img {
   width: 100%;
-}
-
-.project img.mobile-mockup {
-  width: auto;
-  margin: 0 auto;
-  max-height: 80vh;
 }
 
 .project .flex {
@@ -775,6 +791,38 @@ main.project .column2 {
   }
   .project .flex div:first-child {
     padding-right: 0;
+  }
+}
+
+.project .app-mockups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .phone-mockup-group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  max-width: 350px;
+}
+
+@media (min-width: 620px) {
+  .project .phone-mockup-group {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .project .phone-mockup-group:nth-of-type(2n - 1) {
+    padding-right: 20px;
+  }
+  .project .phone-mockup-group:nth-of-type(2n) {
+    padding-left: 20px;
   }
 }
 

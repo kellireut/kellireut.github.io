@@ -85,6 +85,13 @@ footer {
     p {
         color: darken($gray, 30);
     }
+    @media #{$small-screen} {
+        display: block;
+        text-align: center;
+        p {
+            margin: 5px auto;
+        }
+    }
 }
 
 .body-white {

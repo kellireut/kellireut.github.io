@@ -27,6 +27,12 @@
     font-family: 'Playfair Display', serif;
     font-style: italic;
     text-transform: lowercase;
+    @media (max-width: 1100px) {
+        font-size: 7em;
+    }
+    @media (max-width: 950px) {
+        font-size: 6em;
+    }
 }
 
 .connect-links {

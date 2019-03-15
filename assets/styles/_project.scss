@@ -59,20 +59,20 @@ main.project {
         }
     }
     .to-home-desktop {
-        @media (min-width: 801px) {
+        @media (min-width: 851px) {
             margin-top: 100px;
             position: sticky;
             top: 20px;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 850px) {
             display: none;
         }
     }
     .to-home-mobile {
-        @media (min-width: 801px) {
+        @media (min-width: 851px) {
             display: none;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 850px) {
             margin-top: 50px;
         }
     }
@@ -82,11 +82,11 @@ main.project {
     img {
         width: 100%;
         @extend .image-shadow;
-        &.mobile-mockup {
-            width: auto;
-            margin: 0 auto;
-            max-height: 80vh;
-        }
+        // &.mobile-mockup {
+        //     width: auto;
+        //     margin: 0 auto;
+        //     max-height: 80vh;
+        // }
     }
     .flex {
         display: flex;
@@ -114,5 +114,28 @@ main.project {
                 @extend .image-shadow;
             }
         }
+    }
+    .app-mockups {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .phone-mockup-group {
+        flex: 1 1 100%;
+        max-width: 350px;;
+        @media (min-width: 620px) {
+            flex: 1 1 50%;
+            &:nth-of-type(2n - 1) {
+                padding-right: 20px;
+            }
+            &:nth-of-type(2n) {
+                padding-left: 20px;
+            }
+        }
+        // img {
+        //     width: auto;
+        //     margin: 0 auto;
+        //     max-height: 80vh;
+        // }
     }
 }
