@@ -1,0 +1,62 @@
+.wallpapers {
+    max-width: 92vw;
+    margin: 0 auto;
+    h1 {
+        font-size: 10vw;
+        text-align: center;
+        animation: ChangingPurpleTextColor 40s ease infinite;
+        margin: 0 0 0;
+    }
+    .download-instructions {
+        text-align: center;
+        display: none;
+        &-desktop {
+            display: none;
+            @media (min-width: 501px) {
+                display: block;
+                text-align: center;
+                margin-bottom: 100px;
+            }
+        }
+        &-mobile {
+            display: none;
+            @media (max-width: 500px) {
+                display: block;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        animation: ChangingPurpleTextColor 40s ease infinite;
+        margin: 0 0 20px 10px;
+    }
+    .image-group {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: stretch;
+        // align-content: stretch;
+        margin-bottom: 100px;
+
+    }
+    img {
+        flex: 0 0 auto;
+        // width: auto;
+        max-height: 400px;
+        padding: 10px;
+        align-self: flex-start;
+        @media #{$medium-screen} {
+            flex: 0 1 33%;
+        }
+        @media #{$small-screen} {
+            flex: 0 1 50%;
+        }
+    }
+
+
+}
