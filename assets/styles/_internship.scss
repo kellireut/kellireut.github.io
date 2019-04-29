@@ -1,0 +1,16 @@
+.internship-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    article {
+        margin: 0 0 100px;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .intro-paragraph {
+        margin-bottom: 75px;
+    }
+}
