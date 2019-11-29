@@ -1,6 +1,12 @@
 .wallpapers {
     max-width: 92vw;
     margin: 0 auto;
+    @media #{$small-screen} {
+        max-width: 100%;
+    }
+    @media #{$small-screen} {
+        max-width: 100%;
+    }
     h1 {
         font-size: 10vw;
         text-align: center;
@@ -46,7 +52,6 @@
     }
     img {
         flex: 0 0 auto;
-        // width: auto;
         max-height: 400px;
         padding: 10px;
         align-self: flex-start;
@@ -56,7 +61,13 @@
         @media #{$small-screen} {
             flex: 0 1 50%;
         }
+
+        &.desktop {
+            max-height: initial;
+            flex: 0 1 50%;
+            @media #{$medium-screen} {
+                flex: 0 1 100%;
+            }
+        }
     }
-
-
 }
