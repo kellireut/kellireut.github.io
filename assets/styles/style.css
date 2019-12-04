@@ -936,6 +936,7 @@ main.project .column2 {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   max-height: 400px;
+  max-width: 100%;
   padding: 10px;
   -ms-flex-item-align: start;
       align-self: flex-start;
