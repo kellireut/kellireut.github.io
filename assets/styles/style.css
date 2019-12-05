@@ -958,19 +958,18 @@ main.project .column2 {
   }
 }
 
-.wallpapers img.desktop {
-  max-height: initial;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+.wallpapers .image-group.desktop a {
+  max-width: 50%;
 }
 
 @media (max-width: 850px) {
-  .wallpapers img.desktop {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+  .wallpapers .image-group.desktop a {
+    max-width: 100%;
   }
+}
+
+.wallpapers .image-group.desktop img {
+  max-height: initial;
 }
 
 .internship-container {
