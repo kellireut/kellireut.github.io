@@ -61,7 +61,10 @@
             flex: 0 1 33%;
         }
         @media #{$small-screen} {
-            flex: 0 1 50%;
+            display: block;
+            max-height: 100vh;
+            padding: 10px 20px;
+            margin: 0 auto;
         }
     }
     .image-group.desktop {
