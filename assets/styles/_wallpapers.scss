@@ -4,9 +4,9 @@
     @media #{$small-screen} {
         max-width: 100%;
     }
-    @media #{$small-screen} {
-        max-width: 100%;
-    }
+    // @media #{$small-screen} {
+    //     max-width: 100%;
+    // }
     h1 {
         font-size: 10vw;
         text-align: center;
@@ -41,17 +41,19 @@
         animation: ChangingPurpleTextColor 40s ease infinite;
         margin: 0 0 20px 10px;
     }
+    .subheading {
+        margin: 0 0 20px 10px;
+    }
     .image-group {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         align-items: stretch;
         margin-bottom: 100px;
-
     }
     img {
-        flex: 0 0 auto;
-        max-height: 400px;
+        flex: 0 0 25%;
+        max-height: 500px;
         max-width: 100%;
         padding: 10px;
         align-self: flex-start;
