@@ -1,79 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135797499-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135797499-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      gtag("config", "UA-135797499-1");
+    </script>
 
-        gtag('config', 'UA-135797499-1');
-        </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
 
-        <link rel="shortcut icon" type="image/png" href="favicon.ico" />
-        <link rel="stylesheet" href="assets/styles/style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <meta
+      name="google-site-verification"
+      content="lhxPISnKnTIPsu8MaBwLtQ_fpTMFGU8E9s_swUpWdjA"
+    />
+    <title>Kelli Reutman | Portfolio</title>
+  </head>
 
+  <body class="color-changing-border">
+    <header>
+      <h1>Kelli Reutman</h1>
+      <h2>front-end developer</h2>
+    </header>
 
-        <meta name="google-site-verification" content="lhxPISnKnTIPsu8MaBwLtQ_fpTMFGU8E9s_swUpWdjA" />
-        <title>Kelli Reutman | Portfolio</title>
-    </head>
+    <main class="home">
+      <section class="introduction column1">
+        <h1 class="hello color-changing-purple">Hello!</h1>
+        <p class="body-copy">
+          I’m Kelli, a front-end developer that fell in love with code while
+          simply making my designs come to life.
+        </p>
 
-    <body class="color-changing-border">
-            <header>
-                <h1>Kelli Reutman</h1>
-                <h2>front-end developer</h2>
-            </header>
+        <ul class="connect-links">
+          <li>
+            <a
+              href="pages/about.html"
+              class="primary-button"
+              onclick="gtag('event', 'click', {
+                  'event_category' : 'Home Nav',
+                  'event_label' : 'About me'
+              });"
+              >more about me</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kellireutman/"
+              class="primary-button"
+              target="_blank"
+              rel="noopener"
+              onclick="gtag('event', 'click', {
+                'event_category' : 'Home Nav',
+                'event_label' : 'LinkedIn'
+            });"
+              >linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/kelli3884/"
+              class="primary-button"
+              target="_blank"
+              rel="noopener"
+              onclick="gtag('event', 'click', {
+                'event_category' : 'Home Nav',
+                'event_label' : 'Instagram'
+            });"
+              >instagram</a
+            >
+          </li>
+        </ul>
+      </section>
 
-            <main class="home">
-                <section class="introduction column1">
-                    <h1 class="hello color-changing-purple">Hello!</h1>
-                    <p class="body-copy">I’m Kelli, a front-end developer that fell in love with code while simply making my designs come to life.</p>
-
-                    <ul class="connect-links">
-                        <li><a href="pages/about.html"class="primary-button">more about me</a></li>
-                        <li><a href="https://www.linkedin.com/in/kellireutman/" class="primary-button"target="_blank" rel="noopener">linkedin</a></li>
-                        <li><a href="https://www.instagram.com/kelli3884/" class="primary-button"target="_blank" rel="noopener">instagram</a></li>
-                    </ul>
-                </section>
-
-                <section class="project-list column2">
-                    <ul>
-                        <li class="project">
-                            <a href="work/innovate.html">
-                                <h2 class="heading_secondary project-title">Innovate WithIN™</h2>
-                                <img src="assets/images/devices/innovate-within-devices.jpg" alt="" class="project-image" />
-                                <p class="project-link">View project ></p>
-                            </a>
-                        </li>
-                        <li class="project">
-                            <a href="work/aee.html">
-                                <h2 class="heading_secondary project-title">Architecture for Extreme Environments - Snow</h2>
-                                <img src="assets/images/devices/AEE-devices.jpg" alt="" class="project-image" />
-                                <p class="project-link">View project ></p>
-                            </a>
-                        </li>
-                        <li class="project">
-                            <a href="work/chirper.html">
-                                <h2 class="heading_secondary project-title">The Chirper</h2>
-                                <img src="assets/images/devices/chirper-devices.jpg" alt="" class="project-image" />
-                                <p class="project-link">View project ></p>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="see-more"><a href="https://www.behance.net/kellireut" target="_blank" rel="noopener" class="primary-button">See more design work on Behance</a></div>
-                </section>
-            </main>
-            <footer>
-                <p>Kelli Reutman © 2020</p>
-                <p>The world needs (and wants) your smile.</p>
-            </footer>
-    </body>
+      <section class="project-list column2">
+        <ul>
+          <li class="project">
+            <a
+              href="work/innovate.html"
+              onclick="gtag('event', 'click', {
+              'event_category' : 'Projects'
+          });"
+            >
+              <h2 class="heading_secondary project-title">Innovate WithIN™</h2>
+              <img
+                src="assets/images/devices/innovate-within-devices.jpg"
+                alt=""
+                class="project-image"
+              />
+              <p class="project-link">View project ></p>
+            </a>
+          </li>
+          <li class="project">
+            <a
+              href="work/aee.html"
+              onclick="gtag('event', 'click', {
+              'event_category' : 'Projects'
+          });"
+            >
+              <h2 class="heading_secondary project-title">
+                Architecture for Extreme Environments - Snow
+              </h2>
+              <img
+                src="assets/images/devices/AEE-devices.jpg"
+                alt=""
+                class="project-image"
+              />
+              <p class="project-link">View project ></p>
+            </a>
+          </li>
+          <li class="project">
+            <a
+              href="work/chirper.html"
+              onclick="gtag('event', 'click', {
+              'event_category' : 'Projects'
+          });"
+            >
+              <h2 class="heading_secondary project-title">The Chirper</h2>
+              <img
+                src="assets/images/devices/chirper-devices.jpg"
+                alt=""
+                class="project-image"
+              />
+              <p class="project-link">View project ></p>
+            </a>
+          </li>
+        </ul>
+        <div class="see-more">
+          <a
+            href="https://www.behance.net/kellireut"
+            target="_blank"
+            rel="noopener"
+            class="primary-button"
+            onclick="gtag('event', 'click', {
+              'event_category' : 'Projects', 
+              'event_label' : 'Behance', 
+          });"
+            >See more design work on Behance</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Kelli Reutman © 2020</p>
+      <p>The world needs (and wants) your smile.</p>
+    </footer>
+  </body>
 </html>

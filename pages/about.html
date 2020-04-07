@@ -1,51 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135797499-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135797499-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-135797499-1');
-        </script>
+      gtag("config", "UA-135797499-1");
+    </script>
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <link rel="shortcut icon" type="image/png" href="../favicon.ico" />
-        <link rel="stylesheet" href="../assets/styles/style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet" />
-        <title>Kelli Reutman | About</title>
-    </head>
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <title>Kelli Reutman | About</title>
+  </head>
 
-    <body class="color-changing-border flex-body">
-        <header>
-            <h1><a href="../index.html">Kelli Reutman</a></h1>
-            <h2>front-end developer</h2>
-        </header>
+  <body class="color-changing-border flex-body">
+    <header>
+      <h1>
+        <a
+          href="../index.html"
+          onclick="gtag('event', 'click', {
+                'event_category' : 'Home',
+                'event_label' : 'From About'
+            });"
+          >Kelli Reutman</a
+        >
+      </h1>
+      <h2>front-end developer</h2>
+    </header>
 
-        <main class="about">
-            <img src="../assets/images/headshot.jpg" alt="Headshot of Kelli Reutman" class="headshot" />
+    <main class="about">
+      <img
+        src="../assets/images/headshot.jpg"
+        alt="Headshot of Kelli Reutman"
+        class="headshot"
+      />
 
-            <p class="body-copy">
-                <span class="bold"> Hi, hello, welcome!</span> Thank you for taking the time to look around my website. My name is Kelli, and I would describe myself as a <span class="bold">roller coaster enthusiast</span>, <span class="bold">Myers-Briggs nerd</span>, and <span class="bold">houseplant fanatic</span>. The most formative experience in my life has been my years working at
-                <a href="https://digitalcorps.bsu.edu/" target="_blank" rel="noopener" class="bold inline-link">The Digital Corps</a>, where I received mentorship and real-world experience for three and a half years.
-            </p>
-            <p class="body-copy">In July 2019, I moved to the <span class="bold">Louisville, KY</span> area (but I stayed true to my roots on the Indiana side of the river). I am currently looking for <span class="bold">new opportunities</span> in the wide world of web to use my skills in design and front-end development. <span class="bold">I'd love to chat</span> if anything you see here piques your interest, so don't remain a stranger!</p>
+      <p class="body-copy">
+        <span class="bold">Hi, hello, welcome!</span> Thank you for taking the
+        time to look around my website. My name is Kelli, and I would describe
+        myself as a <span class="bold">roller coaster enthusiast</span>,
+        <span class="bold">Myers-Briggs nerd</span>, and
+        <span class="bold">houseplant fanatic</span>. The most formative
+        experience in my life has been my years working at
+        <a
+          href="https://digitalcorps.bsu.edu/"
+          target="_blank"
+          rel="noopener"
+          class="bold inline-link"
+          onclick="gtag('event', 'click', {
+            'event_category' : 'About',
+            'event_label' : 'Digital Corps'
+        });"
+          >The Digital Corps</a
+        >, where I received mentorship and real-world experience for three and a
+        half years.
+      </p>
+      <p class="body-copy">
+        In July 2019, I moved to the
+        <span class="bold">Louisville, KY</span> area (but I stayed true to my
+        roots on the Indiana side of the river). I am currently looking for
+        <span class="bold">new opportunities</span> in the wide world of web to
+        use my skills in design and front-end development.
+        <span class="bold">I'd love to chat</span> if anything you see here
+        piques your interest, so don't remain a stranger!
+      </p>
 
-            <a href="../assets/resume-winter2019-online.pdf" target="_blank" rel="noopener" class="primary-button">View my résumé</a>
-            <a href="mailto:kelli@kellireutman.com" class="primary-button">Email me</a>
+      <a
+        href="../assets/resume-winter2019-online.pdf"
+        target="_blank"
+        rel="noopener"
+        class="primary-button"
+        onclick="gtag('event', 'click', {
+          'event_category' : 'About',
+          'event_label' : 'Resume'
+      });"
+        >View my résumé</a
+      >
+      <a
+        href="mailto:kelli@kellireutman.com"
+        class="primary-button"
+        onclick="gtag('event', 'click', {
+        'event_category' : 'About',
+        'event_label' : 'Email'
+    });"
+        >Email me</a
+      >
 
-            <p class="body-copy">Oh, and if you're curious – my favorite amusement park is <a href="https://www.holidayworld.com/" class="inline-link" target="_blank" rel="noopener">Holiday World</a>, I'm a loyal, caring, and hardworking <a href="https://www.16personalities.com/isfj-personality" class="inline-link" target="_blank" rel="noopener">ISFJ</a>, and I now have <a href="https://photos.app.goo.gl/LnooxxjayDRHjLkH6"class="inline-link" target="_blank" rel="noopener">11 plants</a> that I talk about more than necessary.</p>
+      <p class="body-copy">
+        Oh, and if you're curious – my favorite amusement park is
+        <a
+          href="https://www.holidayworld.com/"
+          class="inline-link"
+          target="_blank"
+          rel="noopener"
+          onclick="gtag('event', 'click', {
+            'event_category' : 'About',
+            'event_label' : 'Holiday World'
+        });"
+          >Holiday World</a
+        >, I'm a loyal, caring, and hardworking
+        <a
+          href="https://www.16personalities.com/isfj-personality"
+          class="inline-link"
+          target="_blank"
+          rel="noopener"
+          onclick="gtag('event', 'click', {
+            'event_category' : 'About',
+            'event_label' : 'ISFJ'
+        });"
+          >ISFJ</a
+        >, and I now have
+        <a
+          href="https://photos.app.goo.gl/LnooxxjayDRHjLkH6"
+          class="inline-link"
+          target="_blank"
+          rel="noopener"
+          onclick="gtag('event', 'click', {
+            'event_category' : 'About',
+            'event_label' : 'Plants'
+        });"
+          >11 plants</a
+        >
+        that I talk about more than necessary.
+      </p>
+    </main>
 
-        </main>
-
-        <footer>
-            <p>Kelli Reutman © 2020</p>
-            <p>Love can only grow by sharing it with others.</p>
-        </footer>
-    </body>
+    <footer>
+      <p>Kelli Reutman © 2020</p>
+      <p>Love can only grow by sharing it with others.</p>
+    </footer>
+  </body>
 </html>
