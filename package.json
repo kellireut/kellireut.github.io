@@ -16,7 +16,7 @@
   "homepage": "",
   "dependencies": {
     "autoprefixer": "^7.2.5",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "postcss-cli": "^4.1.1",
     "watch": "^1.0.2"
   }
